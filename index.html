@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUARTERBIN &mdash; Arcade &amp; Lounge</title>
+<meta name="description" content="QUARTERBIN is a retro arcade lounge with 40+ working cabinets, live leaderboards, and monthly tournaments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scanline-overlay" aria-hidden="true"></div>
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-text">QUARTERBIN</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <a href="#games">Cabinets</a>
+      <a href="#leaderboards">High Scores</a>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-floor" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">Open till late &middot; 214 Vale Street</p>
+      <h1 class="hero-title">
+        <span class="flicker-in">FEED THE</span>
+        <span class="hero-title-accent flicker-in delay-1">MACHINE</span>
+      </h1>
+      <p class="hero-sub">Forty-two restored cabinets, a house leaderboard that never forgets, and a tournament every other Sunday. No memberships. No apps. Just quarters.</p>
+      <div class="hero-actions">
+        <a href="#games" class="btn btn-primary">Browse cabinets</a>
+        <a href="#tournaments" class="btn btn-ghost">Next tournament</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="num">42</span><span class="label">cabinets on the floor</span></div>
+        <div class="hero-stat"><span class="num">1986</span><span class="label">oldest board, still running</span></div>
+        <div class="hero-stat"><span class="num">24/7</span><span class="label">the high scores watch you</span></div>
+      </div>
+    </div>
+    <div class="hero-coin" aria-hidden="true">
+      <span>INSERT<br>COIN</span>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section class="games" id="games">
+    <div class="section-head">
+      <h2>The floor</h2>
+      <p>Six cabinets. Six ways to lose a Saturday. Every board is original hardware, tuned by hand, tracked by the house computer.</p>
+    </div>
+
+    <div class="cabinet-grid">
+
+      <article class="cabinet" style="--glow:#04f7e0;">
+        <div class="cabinet-marquee">NEON STRIKER</div>
+        <div class="cabinet-screen">
+          <div class="screen-content">
+            <svg viewBox="0 0 120 90" class="cab-art" aria-hidden="true">
+              <polygon points="60,10 100,35 100,65 60,80 20,65 20,35" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="60" cy="45" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="60" y1="10" x2="60" y2="80" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="screen-scan" aria-hidden="true"></div>
+        </div>
+        <div class="cabinet-panel">
+          <p class="cabinet-desc">1v1 fighter. Six characters, one secret boss nobody's beaten sober.</p>
+          <div class="cabinet-tags"><span>Fighting</span><span>2 players</span><span>Brutal</span></div>
+        </div>
+      </article>
+
+      <article class="cabinet" style="--glow:#ff2fb0;">
+        <div class="cabinet-marquee">GRID RUNNER</div>
+        <div class="cabinet-screen">
+          <div class="screen-content">
+            <svg viewBox="0 0 120 90" class="cab-art" aria-hidden="true">
+              <path d="M10 80 L60 15 L110 80" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M25 80 L60 30 L95 80" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <line x1="60" y1="15" x2="60" y2="80" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="screen-scan" aria-hidden="true"></div>
+        </div>
+        <div class="cabinet-panel">
+          <p class="cabinet-desc">Vector racer, wireframe hills, no traction. Best lap wins the wall.</p>
+          <div class="cabinet-tags"><span>Racing</span><span>1&ndash;2 players</span><span>Fast</span></div>
+        </div>
+      </article>
+
+      <article class="cabinet" style="--glow:#ffcc33;">
+        <div class="cabinet-marquee">VOLT INVADERS</div>
+        <div class="cabinet-screen">
+          <div class="screen-content">
+            <svg viewBox="0 0 120 90" class="cab-art" aria-hidden="true">
+              <rect x="20" y="20" width="14" height="10" fill="currentColor"/>
+              <rect x="45" y="20" width="14" height="10" fill="currentColor"/>
+              <rect x="70" y="20" width="14" height="10" fill="currentColor"/>
+              <rect x="95" y="20" width="14" height="10" fill="currentColor"/>
+              <rect x="32" y="40" width="14" height="10" fill="currentColor" opacity="0.7"/>
+              <rect x="57" y="40" width="14" height="10" fill="currentColor" opacity="0.7"/>
+              <rect x="82" y="40" width="14" height="10" fill="currentColor" opacity="0.7"/>
+              <rect x="55" y="70" width="10" height="8" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="screen-scan" aria-hidden="true"></div>
+        </div>
+        <div class="cabinet-panel">
+          <p class="cabinet-desc">The original. Three lives, one credit, zero mercy from the wave patterns.</p>
+          <div class="cabinet-tags"><span>Shooter</span><span>1 player</span><span>Classic</span></div>
+        </div>
+      </article>
+
+      <article class="cabinet" style="--glow:#7c3aed;">
+        <div class="cabinet-marquee">CRYPT RAIDERS</div>
+        <div class="cabinet-screen">
+          <div class="screen-content">
+            <svg viewBox="0 0 120 90" class="cab-art" aria-hidden="true">
+              <rect x="30" y="30" width="60" height="45" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M30 30 L60 12 L90 30" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="60" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="screen-scan" aria-hidden="true"></div>
+        </div>
+        <div class="cabinet-panel">
+          <p class="cabinet-desc">Isometric dungeon crawl. Traps reset nightly. Map memorized by regulars only.</p>
+          <div class="cabinet-tags"><span>Adventure</span><span>1 player</span><span>Hard</span></div>
+        </div>
+      </article>
+
+      <article class="cabinet" style="--glow:#04f7e0;">
+        <div class="cabinet-marquee">SIGNAL BREAKER</div>
+        <div class="cabinet-screen">
+          <div class="screen-content">
+            <svg viewBox="0 0 120 90" class="cab-art" aria-hidden="true">
+              <rect x="15" y="15" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="50" y="35" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="85" y="55" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="35" y1="25" x2="50" y2="45" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="70" y1="45" x2="85" y2="65" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="screen-scan" aria-hidden="true"></div>
+        </div>
+        <div class="cabinet-panel">
+          <p class="cabinet-desc">Falling-block puzzle with a rewiring twist. Deceptively calm for the first two minutes.</p>
+          <div class="cabinet-tags"><span>Puzzle</span><span>1&ndash;2 players</span><span>Cerebral</span></div>
+        </div>
+      </article>
+
+      <article class="cabinet" style="--glow:#ff2fb0;">
+        <div class="cabinet-marquee">RUST BUCKET DERBY</div>
+        <div class="cabinet-screen">
+          <div class="screen-content">
+            <svg viewBox="0 0 120 90" class="cab-art" aria-hidden="true">
+              <ellipse cx="60" cy="55" rx="45" ry="20" fill="none" stroke="currentColor" stroke-width="2"/>
+              <ellipse cx="60" cy="55" rx="25" ry="10" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <circle cx="40" cy="55" r="4" fill="currentColor"/>
+              <circle cx="80" cy="48" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="screen-scan" aria-hidden="true"></div>
+        </div>
+        <div class="cabinet-panel">
+          <p class="cabinet-desc">Four-player combat racing. Sit-down cabinet, shared screen, zero friendships survive intact.</p>
+          <div class="cabinet-tags"><span>Combat racing</span><span>Up to 4</span><span>Chaotic</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- LEADERBOARDS -->
+  <section class="leaderboards" id="leaderboards">
+    <div class="section-head">
+      <h2>House records</h2>
+      <p>Updated the moment a machine reports a new high score. Beat one, and your initials go up on the floor screen that night.</p>
+    </div>
+
+    <div class="board-panel">
+      <div class="board-tabs" id="boardTabs" role="tablist" aria-label="Choose a cabinet leaderboard">
+        <button class="board-tab is-active" role="tab" aria-selected="true" data-game="neon-striker">Neon Striker</button>
+        <button class="board-tab" role="tab" aria-selected="false" data-game="grid-runner">Grid Runner</button>
+        <button class="board-tab" role="tab" aria-selected="false" data-game="volt-invaders">Volt Invaders</button>
+        <button class="board-tab" role="tab" aria-selected="false" data-game="crypt-raiders">Crypt Raiders</button>
+        <button class="board-tab" role="tab" aria-selected="false" data-game="signal-breaker">Signal Breaker</button>
+        <button class="board-tab" role="tab" aria-selected="false" data-game="rust-bucket-derby">Rust Bucket Derby</button>
+      </div>
+
+      <div class="board-terminal">
+        <div class="terminal-head">
+          <span class="terminal-dot"></span>
+          <span class="terminal-title" id="boardTitle">NEON STRIKER &mdash; TOP SCORES</span>
+        </div>
+        <table class="score-table">
+          <thead>
+            <tr><th>Rank</th><th>Player</th><th>Score</th><th>Set on</th></tr>
+          </thead>
+          <tbody id="scoreBody">
+            <!-- populated by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURNAMENTS -->
+  <section class="tournaments" id="tournaments">
+    <div class="section-head">
+      <h2>Upcoming tournaments</h2>
+      <p>Every event runs single elimination unless noted. Sign up at the counter or reserve a slot ahead of time.</p>
+    </div>
+
+    <div class="countdown-strip">
+      <span class="countdown-label" id="countdownLabel">Next event in</span>
+      <div class="countdown-clock" id="countdownClock" aria-live="polite">
+        <div class="clock-unit"><span class="clock-num" id="cd-days">00</span><span class="clock-word">days</span></div>
+        <div class="clock-unit"><span class="clock-num" id="cd-hours">00</span><span class="clock-word">hrs</span></div>
+        <div class="clock-unit"><span class="clock-num" id="cd-mins">00</span><span class="clock-word">min</span></div>
+        <div class="clock-unit"><span class="clock-num" id="cd-secs">00</span><span class="clock-word">sec</span></div>
+      </div>
+    </div>
+
+    <div class="tourney-list" id="tourneyList">
+      <!-- populated by script.js -->
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit-inner">
+      <div class="visit-info">
+        <h2>Find the glow</h2>
+        <p class="visit-line"><strong>Address</strong><br>214 Vale Street, back entrance past the laundromat</p>
+        <p class="visit-line"><strong>Hours</strong><br>Mon&ndash;Thu 4pm&ndash;midnight<br>Fri&ndash;Sat 2pm&ndash;2am<br>Sun 2pm&ndash;10pm</p>
+        <p class="visit-line"><strong>Good to know</strong><br>Cash and card both work at the change machine. All ages before 8pm, 18+ after.</p>
+      </div>
+      <div class="visit-card">
+        <p class="visit-card-kicker">Machine's warm.</p>
+        <p class="visit-card-title">Come lose a few lives.</p>
+        <a href="#top" class="btn btn-primary">Plan your visit</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#top" class="logo footer-logo">
+      <span class="logo-mark">◈</span>
+      <span class="logo-text">QUARTERBIN</span>
+    </a>
+    <nav class="footer-nav">
+      <a href="#games">Cabinets</a>
+      <a href="#leaderboards">High Scores</a>
+      <a href="#tournaments">Tournaments</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <p class="footer-fine">&copy; 2026 Quarterbin Arcade &amp; Lounge. All boards original hardware.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
